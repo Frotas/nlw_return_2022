@@ -27,6 +27,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.6rem;
   text-align: center;
@@ -79,10 +83,8 @@ ul {
 .container .header .navgation__footer .menu--close {
   cursor: pointer;
 }
-.container .content {
-  margin-top: calc(4.1rem + var(--nav-heigth));
-}
 .container .content .inicio {
+  padding-top: calc(4.1rem + var(--nav-heigth));
   width: 100%;
 }
 .container .content .inicio__header {
@@ -126,7 +128,7 @@ ul {
   background-color: var(--brand-green-ligth);
 }
 .container .content .servicos {
-  margin-block: 10rem;
+  padding-top: calc(1rem + var(--nav-heigth));
 }
 .container .content .servicos__header {
   text-align: center;
@@ -179,7 +181,7 @@ ul {
 .container .content .sobre {
   display: flex;
   text-align: left;
-  padding-block: 10rem;
+  padding-top: calc(1rem + var(--nav-heigth));
   flex-direction: column;
 }
 .container .content .sobre .title {
@@ -205,7 +207,7 @@ ul {
   align-items: flex-start;
   flex-direction: column;
   justify-content: left;
-  margin-block: 10rem;
+  padding-top: calc(1rem + var(--nav-heigth));
 }
 .container .content .contato .title {
   font-size: 3rem;
@@ -229,6 +231,7 @@ ul {
 }
 .container .footer {
   text-align: left;
+  margin-top: calc(1rem + var(--nav-heigth));
   padding-block: 6rem;
   background-color: var(--brand-green);
 }
