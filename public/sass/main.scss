@@ -34,6 +34,11 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+  
+}
+
 body {
   font-size: 1.6rem;
   text-align: center;
@@ -192,7 +197,6 @@ ul {
       }
     }
     .sobre {
-      // gap: 6rem;
       display: flex;
       text-align: left;
       padding-block: 10rem;
@@ -214,7 +218,6 @@ ul {
         z-index: -1;
         position: absolute;
         background-color: var(--brand-beige);
-        // background-color: #363636;
       }
     }
     .contato {
@@ -232,8 +235,6 @@ ul {
       }
       .btn {
         margin: 3.2rem 0 6rem 0;
-        &__contato {
-        }
       }
       .logradouro,
       .email {

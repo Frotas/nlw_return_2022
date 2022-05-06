@@ -27,6 +27,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.6rem;
   text-align: center;
