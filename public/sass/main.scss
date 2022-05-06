@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-@function bg-heigth($bgHeigth, $value) {
+@function propotinal-calc-bg($bgHeigth, $value) {
   @return calc($bgHeigth + $value);
 }
 
@@ -36,7 +36,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -95,8 +94,8 @@ ul {
     }
   }
   .content {
-    margin-top: calc(4.1rem + var(--nav-heigth));
     .inicio {
+      padding-top: calc(4.1rem + var(--nav-heigth));
       width: 100%;
       &__header {
         width: 100%;
@@ -135,7 +134,7 @@ ul {
         top: 0;
         left: 0;
         width: 100%;
-        height: bg-heigth(108rem, var(--nav-heigth));
+        height: propotinal-calc-bg(108rem, var(--nav-heigth));
         content: "";
         display: block;
         z-index: -1;
@@ -144,7 +143,7 @@ ul {
       }
     }
     .servicos {
-      margin-block: 10rem;
+      padding-top: propotinal-calc-bg(1rem, var(--nav-heigth));
       &__header {
         text-align: center;
         .heatText {
@@ -188,7 +187,7 @@ ul {
         top: 108rem;
         left: 0;
         width: 100%;
-        height: bg-heigth(203rem, var(--nav-heigth));
+        height: propotinal-calc-bg(203rem, var(--nav-heigth));
         content: "";
         display: block;
         z-index: -1;
@@ -199,7 +198,8 @@ ul {
     .sobre {
       display: flex;
       text-align: left;
-      padding-block: 10rem;
+      // padding-block: 10rem;
+      padding-top: propotinal-calc-bg(1rem, var(--nav-heigth));
       flex-direction: column;
       .title {
         margin: 1.6rem 0 2.4rem 0;
@@ -212,7 +212,7 @@ ul {
         top: 270rem;
         left: 0;
         width: 100%;
-        height: bg-heigth(96rem, var(--nav-heigth));
+        height: propotinal-calc-bg(96rem, var(--nav-heigth));
         content: "";
         display: block;
         z-index: -1;
@@ -226,6 +226,7 @@ ul {
       align-items: flex-start;
       flex-direction: column;
       justify-content: left;
+      padding-top: propotinal-calc-bg(1rem, var(--nav-heigth));
       .title {
         font-size: 3rem;
         line-height: 3.9rem;
@@ -246,13 +247,14 @@ ul {
       &__image {
         width: 100%;
       }
-      margin-block: 10rem;
     }
   }
   .footer {
     text-align: left;
+    margin-top: propotinal-calc-bg(1rem, var(--nav-heigth));
     padding-block: 6rem;
     background-color: var(--brand-green);
+
     svg:nth-child(1) path {
       fill: var(--brand-beige);
     }
@@ -387,7 +389,7 @@ body.menu--expanded {
 .modal {
   top: 0;
   left: 0;
-  width: bg-heigth(100%, var(--nav-heigth));
+  width: propotinal-calc-bg(100%, var(--nav-heigth));
   height: 89.6rem;
   position: absolute;
 }
